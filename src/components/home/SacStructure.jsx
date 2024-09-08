@@ -11,9 +11,11 @@ const SacStructure = () => (
           Services Accounting Code (SAC) in GST
         </Title>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          Services, much like goods, require uniform classification for
-          recognition, measurement, and taxation purposes. These classifications
-          are known as Services Accounting Codes (SAC).
+          <span className="para">
+            Services, much like goods, require uniform classification for
+            recognition, measurement, and taxation purposes. These
+            classifications are known as Services Accounting Codes (SAC).
+          </span>
         </Paragraph>
 
         <div className="sacCodeExample">
@@ -25,9 +27,11 @@ const SacStructure = () => (
         </div>
 
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          Legal documentation and certification services related to patents,
-          copyrights, and other intellectual property rights are classified
-          under 998213.
+          <span className="para">
+            Legal documentation and certification services related to patents,
+            copyrights, and other intellectual property rights are classified
+            under 998213.
+          </span>
         </Paragraph>
         <ul
           style={{
@@ -52,8 +56,10 @@ const SacStructure = () => (
           HSN Worldwide
         </Title>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          The Harmonized System of Nomenclature (HSN) plays a crucial role in
-          the global trade ecosystem by:
+          <span className="para">
+            The Harmonized System of Nomenclature (HSN) plays a crucial role in
+            the global trade ecosystem by:
+          </span>
         </Paragraph>
         <ul style={{ fontSize: "16px", color: "#9092A3", paddingLeft: "20px" }}>
           <li>Ensuring consistent classification of goods across borders.</li>
@@ -63,31 +69,39 @@ const SacStructure = () => (
           </li>
         </ul>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          While the HSN codes are globally standardized, some countries may
-          implement slight modifications to account for specific national
-          requirements.
+          <span className="para">
+            While the HSN codes are globally standardized, some countries may
+            implement slight modifications to account for specific national
+            requirements.
+          </span>
         </Paragraph>
 
         <Title level={2} style={{ marginBottom: "20px" }}>
           HSN in India
         </Title>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          As a member of the World Customs Organization (WCO) since 1971, India
-          initially adopted the 6-digit HSN codes for Customs and Central Excise
-          purposes. To achieve greater accuracy in classification, India later
-          extended these codes to an 8-digit format, allowing for more detailed
-          categorization of goods.
+          <span className="para">
+            As a member of the World Customs Organization (WCO) since 1971,
+            India initially adopted the 6-digit HSN codes for Customs and
+            Central Excise purposes. To achieve greater accuracy in
+            classification, India later extended these codes to an 8-digit
+            format, allowing for more detailed categorization of goods.
+          </span>
         </Paragraph>
 
         <Title level={2} style={{ marginBottom: "20px" }}>
           HSN Codes in GST
         </Title>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          HSN (Harmonized System of Nomenclature) codes are critical under the
-          GST regime, used for the systematic classification of goods.
+          <span className="para">
+            HSN (Harmonized System of Nomenclature) codes are critical under the
+            GST regime, used for the systematic classification of goods.
+          </span>
         </Paragraph>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          HSN Codes to be Declared (Up to March 31, 2021):
+          <span className="para">
+            HSN Codes to be Declared (Up to March 31, 2021):
+          </span>
         </Paragraph>
         <ul
           style={{
@@ -108,9 +122,11 @@ const SacStructure = () => (
           Declaration of HSN Codes for Goods and Services
         </Title>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          From April 1, 2021, the declaration requirements for HSN codes under
-          GST were updated (as per CGST Notification No. 78/2020 dated October
-          15, 2020):
+          <span className="para">
+            From April 1, 2021, the declaration requirements for HSN codes under
+            GST were updated (as per CGST Notification No. 78/2020 dated October
+            15, 2020):
+          </span>
         </Paragraph>
         <ul style={{ fontSize: "16px", color: "#9092A3" }}>
           <li>
@@ -138,10 +154,12 @@ const SacStructure = () => (
           <Paragraph style={{ fontSize: "20px", margin: 0 }}>
             <strong style={{ color: "#222222" }}>Note:</strong>
             <span style={{ color: "#656565" }}>
-              {" "}
-              The annual aggregate turnover for the previous financial year is
-              referenced for reporting invoices in FY 2021-22, which means the
-              turnover of FY 2020-21 is considered.
+              <span className="para">
+                {" "}
+                The annual aggregate turnover for the previous financial year is
+                referenced for reporting invoices in FY 2021-22, which means the
+                turnover of FY 2020-21 is considered.
+              </span>
             </span>
           </Paragraph>
         </Card>
@@ -150,18 +168,24 @@ const SacStructure = () => (
           Importance of HSN Codes under GST
         </Title>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          HSN codes streamline GST by eliminating the need for detailed
-          descriptions of goods on tax invoices. This makes the filing process
-          more efficient, as GST returns are automated.
+          <span className="para">
+            HSN codes streamline GST by eliminating the need for detailed
+            descriptions of goods on tax invoices. This makes the filing process
+            more efficient, as GST returns are automated.
+          </span>
         </Paragraph>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          Taxpayers, including dealers and service providers, must provide
-          HSN/SAC-wise summaries of their sales in GSTR-1, based on the turnover
-          slabs mentioned above.
+          <span className="para">
+            Taxpayers, including dealers and service providers, must provide
+            HSN/SAC-wise summaries of their sales in GSTR-1, based on the
+            turnover slabs mentioned above.
+          </span>
         </Paragraph>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          For exports and imports under GST, declaring all 8 digits of the HSN
-          code is mandatory.
+          <span className="para">
+            For exports and imports under GST, declaring all 8 digits of the HSN
+            code is mandatory.
+          </span>
         </Paragraph>
       </div>
     </div>

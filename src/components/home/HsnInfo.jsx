@@ -11,11 +11,13 @@ const HsnInfo = () => (
           What is HSN Code?
         </Title>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          HSN stands for Harmonized System of Nomenclature, a globally
-          recognized system for the systematic classification of goods. This
-          6-digit uniform code, developed by the World Customs Organization
-          (WCO) in 1988, categorizes over 5,000 products and is widely accepted
-          across the world.
+          <span className="para">
+            HSN stands for Harmonized System of Nomenclature, a globally
+            recognized system for the systematic classification of goods. This
+            6-digit uniform code, developed by the World Customs Organization
+            (WCO) in 1988, categorizes over 5,000 products and is widely
+            accepted across the world.
+          </span>
         </Paragraph>
 
         <HeroVideoDialog
@@ -30,26 +32,30 @@ const HsnInfo = () => (
           How does HSN code work?
         </Title>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          The HSN system is organized into approximately 5,000 commodity groups,
-          each identified by a six-digit code. This legal and logical structure
-          ensures uniform classification worldwide, supported by clearly defined
-          rules.
+          <span className="para">
+            The HSN system is organized into approximately 5,000 commodity
+            groups, each identified by a six-digit code. This legal and logical
+            structure ensures uniform classification worldwide, supported by
+            clearly defined rules.
+          </span>
         </Paragraph>
 
         <Title level={2} style={{ marginBottom: "20px" }}>
           Importance of HSN
         </Title>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          HSN's primary purpose is to standardize the classification of goods
-          globally, promoting uniformity and facilitating international trade.
-          The system is utilized by over 200 countries and covers more than 98%
-          of merchandise in international trade.
+          <span className="para">
+            HSN's primary purpose is to standardize the classification of goods
+            globally, promoting uniformity and facilitating international trade.
+            The system is utilized by over 200 countries and covers more than
+            98% of merchandise in international trade.
+          </span>
         </Paragraph>
         <Title level={2} style={{ marginBottom: "20px" }}>
           Understanding HSN Code Structure
         </Title>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          The HSN structure includes:
+          <span className="para">The HSN structure includes:</span>
         </Paragraph>
         <ul style={{ fontSize: "16px", color: "#9092A3", paddingLeft: "20px" }}>
           <li>21 Sections</li>
@@ -58,8 +64,11 @@ const HsnInfo = () => (
           <li>5,224 Subheadings</li>
         </ul>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          Each section is divided into chapters, which are further broken down
-          into headings and subheadings, describing goods in increasing detail.
+          <span className="para">
+            Each section is divided into chapters, which are further broken down
+            into headings and subheadings, describing goods in increasing
+            detail.
+          </span>
         </Paragraph>
 
         <div className="hsnCodeExample">
@@ -71,7 +80,9 @@ const HsnInfo = () => (
         </div>
 
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          Wooden chairs are classified under HSN 94.01.40:
+          <span className="para">
+            Wooden chairs are classified under HSN 94.01.40:
+          </span>
         </Paragraph>
         <ul style={{ fontSize: "16px", color: "#9092A3", paddingLeft: "20px" }}>
           <li>
@@ -85,9 +96,11 @@ const HsnInfo = () => (
           <li>40: Product code for wooden chairs.</li>
         </ul>
         <Paragraph style={{ fontSize: "16px", color: "#9092A3" }}>
-          India further refines this classification with an additional two
-          digits. For instance, wooden chairs designed for dining purposes are
-          classified as 94.01.40.10.
+          <span className="para">
+            India further refines this classification with an additional two
+            digits. For instance, wooden chairs designed for dining purposes are
+            classified as 94.01.40.10.
+          </span>
         </Paragraph>
       </div>
     </div>
