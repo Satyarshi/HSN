@@ -37,13 +37,14 @@ body {
   display: flex;
   align-items: center;
 }
-
 .header-menu {
   display: flex;
   align-items: center;
   font-weight: bold;
 }
-
+#hero {
+  padding-top: 100px;
+}
 .custom-menu-item {
   padding: 0 20px;
   color: #000;
@@ -87,9 +88,7 @@ body {
 /* Block Styles */
 .heroBlock,
 .hsnInfoBlock,
-.hsnCodeStructureBlock,
-.sacCodeStructureBlock,
-.hsnDeclarationStructureBlock {
+.sacCodeStructureBlock {
   background: #fff;
   padding: 20px 0;
   margin-bottom: 0;
@@ -102,10 +101,10 @@ body {
 
 h1,
 h2 {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 600;
   margin-bottom: 15px;
-  color: #222;
+  color: rgba(0, 0, 0, 0.88);
 }
 
 p {
@@ -120,53 +119,17 @@ ul {
   margin-bottom: 10px;
 }
 
-/* Specific Elements */
 .searchBoxWrapper {
   text-align: center;
   padding: 0 15px;
 }
 
-.ant-input-outlined {
-  width: 100%;
-  max-width: 730px;
-}
-/* Styling the search button */
 .ant-input-group-wrapper {
-  width: 800px;
-}
-@media (max-width: 1200px) {
-  .ant-input-group-wrapper {
-    max-width: 750px;
-    transform: translate(-4%, 0);
-  }
-}
-@media (max-width: 820px) {
-  .ant-input-group-wrapper {
-    max-width: 650px;
-  }
-}
-@media (max-width: 720px) {
-  .ant-input-group-wrapper {
-    max-width: 560px;
-  }
-}
-@media (max-width: 624px) {
-  .ant-input-group-wrapper {
-    max-width: 460px;
-  }
-}
-@media (max-width: 515px) {
-  .ant-input-group-wrapper {
-    max-width: 360px;
-  }
-}
-@media (max-width: 515px) {
-  .ant-input-group-wrapper {
-    width: 300px;
-  }
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
-/* Styling the search button */
 .ant-input-search-button {
   background-color: #1890ff;
   color: white;
@@ -185,13 +148,14 @@ ul {
   text-align: center;
   margin: 15px 0;
 }
+
 .rounded-video {
-  border-radius: 15px; 
-  overflow: hidden; 
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .hsnInfoBlock .rounded-video img {
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
 .playIcon {
@@ -201,18 +165,4 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.hsnDeclarationStructureBlock .ant-card {
-  background-color: rgba(239, 254, 255, 1);
-  border-radius: 8px;
-  padding: 15px;
-  margin: 20px 0;
-  border: 2px solid rgba(34, 211, 238, 1);
-}
-
-.hsnDeclarationStructureBlock .ant-card p {
-  font-size: 16px;
-  color: #656565;
-  margin: 0;
 }
