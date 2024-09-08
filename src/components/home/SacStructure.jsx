@@ -152,7 +152,7 @@ const SacStructure = () => (
           }}
         >
           <Paragraph style={{ fontSize: "20px", margin: 0 }}>
-            <strong style={{ color: "#222222" }}>Note:</strong>
+            <strong style={{ color: "#222222" }}><span classname = "para">Note:</span></strong>
             <span style={{ color: "#656565" }}>
               <span className="para">
                 {" "}
