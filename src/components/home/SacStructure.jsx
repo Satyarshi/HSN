@@ -152,9 +152,9 @@ const SacStructure = () => (
           }}
         >
           <Paragraph style={{ fontSize: "20px", margin: 0 }}>
-            <strong style={{ color: "#222222" }}>Note:</strong>
+            <strong style={{ color: "#222222" }}><span className="note">Note:</span></strong>
             <span style={{ color: "#656565" }}>
-              <span className="para">
+              <span className="note">
                 {" "}
                 The annual aggregate turnover for the previous financial year is
                 referenced for reporting invoices in FY 2021-22, which means the
