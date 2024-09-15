@@ -39,7 +39,7 @@ const SearchBox = () => {
     setError("");
 
     try {
-      const response = await axios.get("/api/hsn", {
+      const response = await axios.get("https://nemesis.pythonanywhere.com", {
         params: {
           code: value, // Sending the entered HSN code as query param
         },
