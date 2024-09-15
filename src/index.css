@@ -189,3 +189,15 @@ ul {
     font-size: 35px;
   }
 }
+.ant-table-thead > tr > th {
+  color: #89888e !important; 
+  font-weight: bold; 
+}
+.hsn-code {
+  color: #191632 !important;
+  font-weight:500; 
+}
+
+.description {
+  color: #747474 !important;
+}
