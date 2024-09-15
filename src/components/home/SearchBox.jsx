@@ -15,7 +15,7 @@ const SearchBox = () => {
       dataIndex: "code",
       key: "code",
       align: "center",
-      width: '30%',
+      width: "30%",
       render: (text) => <span className="hsn-code">{text}</span>, // Custom class for HSN code
     },
     {
@@ -61,46 +61,50 @@ const SearchBox = () => {
 
   return (
     <div className="searchBoxWrapper">
-      <Search
-        placeholder="Enter HSN Code"
-        allowClear
-        enterButton="Search"
-        size="large"
-        onSearch={handleSearch}
-        style={{ width: "100%", maxWidth: "900px", paddingLeft: "0px" }}
-      />
+      <div className="container-fluid">
+        <div className="textHolder">
+          <Search
+            placeholder="Enter HSN Code"
+            allowClear
+            enterButton="Search"
+            size="large"
+            onSearch={handleSearch}
+            style={{ width: "100%", maxWidth: "900px", paddingLeft: "0px" }}
+          />
 
-      {/* Display loading spinner */}
-      {loading && (
-        <div style={{ marginTop: "20px" }}>
-          <Spin size="large" />
+          {/* Display loading spinner */}
+          {loading && (
+            <div style={{ marginTop: "20px" }}>
+              <Spin size="large" />
+            </div>
+          )}
+
+          {/* Display error message */}
+          {error && !loading && (
+            <Alert message={error} type="error" style={{ marginTop: "20px" }} />
+          )}
+
+          {/* Display search results in a table */}
+          {!loading && searchResults.length > 0 && (
+            <Table
+              columns={columns}
+              dataSource={searchResults.map((item, index) => ({
+                key: index,
+                code: item.hsn,
+                description: item.description,
+              }))}
+              pagination={false}
+              style={{
+                marginTop: "20px",
+                width: "100%",
+                maxWidth: "900px",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            />
+          )}
         </div>
-      )}
-
-      {/* Display error message */}
-      {error && !loading && (
-        <Alert message={error} type="error" style={{ marginTop: "20px" }} />
-      )}
-
-      {/* Display search results in a table */}
-      {!loading && searchResults.length > 0 && (
-        <Table
-          columns={columns}
-          dataSource={searchResults.map((item, index) => ({
-            key: index,
-            code: item.hsn,
-            description: item.description,
-          }))}
-          pagination={false}
-          style={{
-            marginTop: "20px",
-            width: "100%",
-            maxWidth: "900px",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        />
-      )}
+      </div>
     </div>
   );
 };
