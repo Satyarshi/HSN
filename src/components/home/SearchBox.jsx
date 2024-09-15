@@ -39,7 +39,7 @@ const SearchBox = () => {
     setError("");
 
     try {
-      const response = await axios.get("https://nemesis.pythonanywhere.com", {
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/hsn`, {
         params: {
           code: value, // Sending the entered HSN code as query param
         },
@@ -47,6 +47,7 @@ const SearchBox = () => {
 
       if (response.data && response.data.length > 0) {
         setSearchResults(response.data);
+        console.log(searchResults);
       } else {
         setSearchResults([]);
         setError("No results found for the provided HSN code.");
