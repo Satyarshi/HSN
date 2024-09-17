@@ -189,15 +189,93 @@ ul {
     font-size: 35px;
   }
 }
+.responsiveContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 723px) {
+  .responsiveContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .responsiveContainer .ant-select,
+  .responsiveContainer .ant-input {
+    width: 100% !important;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 428px) {
+  .responsiveContainer {
+    align-items: flex-start;
+  }
+}
+
+.ant-tabs-content-holder {
+  margin-top: 10px;
+}
 .ant-table-thead > tr > th {
-  color: #89888e !important; 
-  font-weight: bold; 
+  color: #89888e !important;
+  font-weight: bold;
 }
 .hsn-code {
   color: #191632 !important;
-  font-weight:500; 
+  font-weight: 500;
 }
 
 .description {
   color: #747474 !important;
+}
+.hsn-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10px;
+}
+.hsn-page-container {
+  width: 500px;
+}
+
+.hsn-page-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hsn-page-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.add-button {
+  margin-right: 20px;
+}
+
+.search-input {
+  flex-grow: 1;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.upload-box {
+  margin-top: 10px;
+}
+
+.hsn-page-container .ant-btn-primary {
+  background-color: #31a6c7;
+}
+.ant-upload-wrapper .ant-upload-drag .ant-upload-drag-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
